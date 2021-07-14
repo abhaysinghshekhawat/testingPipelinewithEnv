@@ -10,7 +10,7 @@ pipeline{
              sh 'ls '
              sh 'pwd'
              sh 'sudo podman build -t testing:$VERSION .'
-             sh 'sudo podman run -dit -p 85:80 --name jenkinsAutomated testing:$version'
+             sh 'sudo podman run -dit -p 85:80 --name jenkinsAutomated testing:$VERSION'
          } 
         }
     }
